@@ -1,0 +1,6 @@
+an 3
+na 3
+at 1
+ba 1
+nn 1
+te 1
