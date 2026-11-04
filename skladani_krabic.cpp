@@ -6,7 +6,7 @@
 #include <set>
 #include <queue>
 #include <map>
-#include <bits/stdc++.h>
+#include <iterator>
 typedef long long ll;
 using namespace std;
 
