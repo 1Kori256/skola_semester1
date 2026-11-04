@@ -56,7 +56,8 @@ int main()
     int right = N+1;
     int middle = 0;
 
-    int strediska[N] = { 0 };
+    int strediska[N];
+    std::fill_n(strediska, N, 0);
     dfs(adj, N, 0, -1, strediska, -1, middle);
 
     int min_remembered = N; 
@@ -65,7 +66,8 @@ int main()
     while(left<=right) {
         middle = left+(right-left)/2;
 
-        int strediska[N] = { 0 };
+        int strediska[N];
+        std::fill_n(strediska, N, 0);
         dfs(adj, N, 0, -1, strediska, 0, middle);
         int count = 0;
         

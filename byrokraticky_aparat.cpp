@@ -2,6 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <algorithm>
+#include <numeric>
 #include <iomanip>
 #include <string>
 #include <set>
@@ -17,7 +18,7 @@ ll LcmOfArray(vector<ll> arr, ll idx){
     }
     ll a = arr[idx];
     ll b = LcmOfArray(arr, idx+1);
-    return (a*b/__gcd(a,b));
+    return (a*b/std::gcd(a,b));
 }
 
 
